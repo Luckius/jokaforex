@@ -1,0 +1,263 @@
+
+<!DOCTYPE HTML>
+<html class="no-js" lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="robots" content="index,follow">
+
+<title>Joka Forex</title>
+<link href="static/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/css/bootstrap.min.css" rel="stylesheet">
+<link href="static/css/bwt.css" rel="stylesheet">
+<link href="static/css/full-slider.css" rel="stylesheet">
+
+<link href="static/css/animate.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
+{{ moment.include_jquery() }}
+{{ moment.include_moment() }}
+<!-- Custom Fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="javascript/html5shiv.js"></script>
+        <script src="javascript/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="header-sticky">
+
+    <div class="boxed">
+        <div class="loader">
+            <span class="loader1 block-loader"></span>
+            <span class="loader2 block-loader"></span>
+            <span class="loader3 block-loader"></span>
+        </div>
+
+        <div class="header-inner-pages">
+            <div class="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="bwt-information">
+                                <li class="phone">
+                                    <a href="#" title="Phone number"><i class="fa fa-phone"></i> Call us: +255762447044</a>
+                                </li>
+                                <li class="email">
+                                    <a href="#" title="Email address"><i class="fa fa-envelope"></i> Email: jokaforex@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="style-box text-right">
+                                <ul class="bwt-socials">
+                                    <li class="facebook">
+                                        <a href="#"><i class="fa fa-facebook-f"></i></a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="wifi">
+                                        <a href="#"><i class="fa fa-wifi"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="question">
+                                    <div>
+                                        <i class="fa fa-question-circle-o"></i><p class="text">Have any questions</p>
+                                    </div>
+                                </div>
+                                <div class="box-text text-right">
+                                    <p>Get An Appointment</p>
+                                </div>
+                            </div>
+                        </div><!-- col-md-12 -->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- Top -->
+        </div><!-- header-inner-pages -->
+
+        <!-- Wrap-slide -->
+        <div class="wrap-slider">
+            <!-- Header -->
+            <header id="header" class="header style-color clearfix">
+                <div class="container">
+                    <div class="header-wrap clearfix">
+                        <div id="logo" class="logo">
+                            <a href="index.html" rel="home">
+                                <img src="static/images/logo.png" class="img-fluid" alt="Logo">
+                            </a>
+                        </div><!-- /.logo -->
+
+                        <div class="nav-wrap">
+                            <div class="btn-menu">
+                                <span></span>
+                            </div><!-- //mobile menu button -->
+
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <li>
+                                        <a class="active" href="{{ url_for('index') }}">Home</a>
+                                    </li>
+                                    <li><a href="{{ url_for('blog') }}">Top brokers</a></li>
+                                    <li><a href="{{ url_for('services') }}">Education and Training</a>
+                                    </li>
+                                    <li><a href="{{ url_for('about') }}">About us</a>
+                                    </li>
+                                    <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                                </ul><!-- /.menu -->
+                            </nav><!-- /.mainnav -->
+                        </div><!-- /.nav-wrap -->
+                    </div><!-- /.header-wrap -->
+                </div>
+            </header><!-- /.header -->
+        </div> <!-- /.wrap-slider -->
+
+
+
+        <div class="col-md-12">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            {% block content %}{% endblock %}
+        </div>
+
+
+
+
+
+
+        <section class="bwt-top-0">
+          <div class="bwt-clients">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="thumb-clients v1">
+                                    <img src="static/images/clients/1.png" alt="image">
+                                </div>
+                                <div class="thumb-clients v2">
+                                    <img src="static/images/clients/2.png" alt="image">
+                                </div>
+                                <div class="thumb-clients v3">
+                                    <img src="static/images/clients/3.png" alt="image">
+                                </div>
+                                <div class="thumb-clients v4">
+                                    <img src="static/images/clients/4.png" alt="image">
+                                </div>
+                                <div class="thumb-clients v5">
+                                    <img src="static/images/clients/5.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+            </section>
+
+
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="footer-logo">
+                            <img src="static/images/jokafx.png" class="img-fluid" alt="logo">
+                            <div class="im-map">
+                              <h5 class="title">Over 5 years of experience</h5>
+                              <p>We have been doing well in forex market and bt trading and teaching too.
+                                we have helped many students to archieve their goals of becoming the best forex traders in the world.</p>
+                            </div>
+                        </div><!-- footer-logo -->
+                    </div><!-- col-md-4 -->
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="bwt-widget bwt-widget-our-services">
+                            <div class="title-link box3">
+                                <h5 class="bwt-widget-title">Main Menu</h5>
+                            </div>
+                            <ul class="our_services">
+                                <li class="facebook"><a href="{{ url_for('index')}}"> Home</a></li>
+                                <li class="twitch"><a href="{{ url_for('blog')}}">Top Brokers</a></li>
+                                <li class="google"><a href="{{ url_for('services')}}"> Education & Training</a></li>
+                                <li class="linkedIn"><a href=""> News</a></li>
+                                <li class="youtube"><a href="{{ url_for('contact')}}"> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- col-md-3 -->
+
+                    <div class="col-sm-12 col-md-6 col-lg-2">
+                        <div class="bwt-widget bwt-widget-follow-us">
+                            <div class="title-link box2">
+                                <h5 class="bwt-widget-title">Follow Us</h5>
+                            </div>
+                            <ul class="bwt-follow-us">
+                                <li class="facebook"><a href="#"> Facebook</a></li>
+                                <li class="twiter"><a href="#"> Twiiter</a></li>
+                                <li class="google"><a href="#"> Google Plus </a></li>
+                                <li class="linkedIn"><a href="#"> LinkedIn</a></li>
+                                <li class="youtube"><a href="#"> Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div><!-- col-md-2 -->
+
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="bwt-widget bwt-widget-subscribe-us">
+                            <div class="title-link box4">
+                                <h5 class="bwt-widget-title">Subscribe Us</h5>
+                            </div>
+                            <p>Sign Up for our mailing list to get latest updates and news.</p>
+                            <div class="bwt-widget subscribe-search">
+                                <form action="/get_email" id="mailform" method="get">
+                                    <div>
+                                        <input type="text" id="ss" class="ssss" placeholder="Enter your email.">
+                                        <button class="submit-button"><i class="fa fa-envelope-open-o"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- footer -->
+
+        <!-- Bottom -->
+   <div class="bwt-footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 col-md-12 col-lg-6 copyright">
+<div class="left-text">Copyright &copy; JokaForex 2019. All Rights Reserved</div>
+</div>
+
+</div>
+</div>
+</div>
+        <!-- Go Top -->
+        <a class="go-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </a>
+
+        <!-- Javascript -->
+        <!-- Javascript -->
+        <script type="text/javascript" src="static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/js/popper.min.js"></script>
+		<script type="text/javascript" src="static/js/jquery.easing.js"></script>
+        <script type="text/javascript" src="static/js/main.js"></script>
+    </div>
+</body>
+
+</html>

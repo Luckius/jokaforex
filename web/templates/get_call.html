@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+
+{% for content in allcalls %}
+    <ul>
+      <li>{{ content.names }}</li>
+      <li>{{ content.emails}}</li>
+      <li>{{ content.phones}}</li>
+    </ul>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
